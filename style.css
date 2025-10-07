@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #282828;
+}
+
+/*Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo img {
+  height: 40px;
+}
+/* Logo */
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  margin-left: 5px;
+}
+
+.company-name {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+} 
+
+.tagline {
+  font-size: 12px;
+  color: #777;
+  margin-top: 2px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #282828;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #FA1239;
+}
+
+.quote-btn {
+  background-color: #FA1239;      
+  color: #FFFFFF;                 
+  border: none;                   
+  padding: 10px 32px;             
+  font-size: 16px;                
+  font-weight: 600;              
+  border-radius: 30px;            
+  cursor: pointer;                
+  transition: all 0.3s ease;     
+  box-shadow: 0px 4px 8px rgba(250, 18, 57, 0.25);
+}
+
+.quote-btn:hover {
+  background-color: #FF3153;      
+  transform: scale(1.05);        
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 120px;
+  background: linear-gradient(to right, #fde3e3, #fbcff7);
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1a1a1a;
+  max-width: 600px; /* adjust if needed */
+}
+
+.hero-content h1 .highlight {
+  color: #e63946; /* red */
+}
+
+.highlight-line {
+  white-space: nowrap; /* keeps Deserves A Yes + Let's on one line */
+  display: inline-block;
+}
+
+.hero-content p {
+  font-size: 16px;
+  margin: 20px 0;
+  color: #666;
+}
+.hero-subtext {
+  font-family: 'Figtree', sans-serif;
+  font-size: 16px;
+  color: #6B7280;
+  line-height: 34px;
+  max-width: 485px;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+
+/* Buttons */
+.hero-buttons button {
+  font-family: 'Figtree', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 22px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Resume Packages  */
+button.secondary {
+  background-color: #ffffff;
+  color: #FA1239;
+  border: 1px solid #FA1239;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+button.secondary:hover {
+  background-color: #FA1239;
+  color: #fff;
+}
+
+/* Contact Butto */
+button.primary {
+  background-color: #FA1239;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 10px rgba(250, 18, 57, 0.3);
+}
+
+button.primary:hover {
+  background-color: #d90f32;
+}
+
+
+/* Images */
+.hero-image {
+  position: relative;
+}
+
+.hero-image img {
+  left: 811px;   
+  top: 190px; 
+  width: 506px;
+  height: 727 px;
+}
+
+.rating-card {
+  position: absolute;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  padding: 15px 20px;
+  font-size: 20px;
+}
+
+.rating-card {
+  top: 729px;
+  left: 585px;
+  width: 350px;
+  height: 117px; 
+}
+
+.resume-card {
+  position: absolute;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.915);
+  border-radius: 8px;
+  padding: 30px 30px;
+  font-size: 14px;
+}
+.resume-card {
+  top: 734px;
+  left: 1129px;
+  width: 270.66px;
+  height: 133.43px;
+  color: #000000;  
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+}
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: 650px;
+}
+
+.hero-section {
+  position: relative;
+}
+/* boxes */
+.rating-resume-wrapper {
+  position: absolute;
+  top: 585px; 
+  left: 729px;
+  display: flex;
+  align-items: center;
+  gap: 30px; 
+  z-index: 10;
+}
+
+.rating-box {
+  width: 350px;
+  height: 117px;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  opacity: 1;
+}
+
+.rating-value {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #00b894;
+}
+
+.rating-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.rating-info span {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #2b2b2b;
+}
+
+.star-icon {
+  width: 80px;
+  height: auto;
+}
+
+/* Resume Count Box */
+.resume-count-box {
+  width: 270.66px;
+  height: 133.43px;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  opacity: 1;
+}
+
+.resume-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.resume-text h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #ff2f5a;
+  margin: 0;
+}
+
+.resume-text p {
+  font-family: 'Figtree', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2b2b2b;
+  margin: 0;
+}
+/* ------------------------------
+   WHAT YOU GET SECTION
+------------------------------- */
+.what-you-get {
+  position: relative;
+  width: 1440px; 
+  height: 774px; 
+  left: 0; /* X */
+  top: 0; /* Y */
+  background-color: #ffffff; 
+  opacity: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+.what-you-get .container {
+  width: 1200px;
+  text-align: center;
+}
+.what-you-get-label {
+  position: relative;
+  width: 154px;
+  height: 42px;
+  left: 543px;
+  top: 0px;
+
+  background-color: rgba(253, 146, 164, 0.3); 
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  opacity: 1;
+}
+
+/* Heading */
+.heading .label {
+  display: inline-block;
+  background-color: #fa1239;
+  color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.heading h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.4;
+  max-width: 800px;
+  margin: 20px auto 60px;
+}
+
+.heading h2 span {
+  color: #fa1239;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 25px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2b2b2b;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 15px;
+  color: #636363;
+  line-height: 1.6;
+}
+
+
+
+
